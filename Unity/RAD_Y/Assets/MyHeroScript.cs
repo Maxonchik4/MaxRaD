@@ -6,7 +6,7 @@ public class MyHeroScript : MonoBehaviour
 {
     float runningSpeed = 3f;
     // Start is called before the first frame update
-    float turnSpeed = 90f;
+    float turnSpeed = 100f;
     void Start()
     {
 
