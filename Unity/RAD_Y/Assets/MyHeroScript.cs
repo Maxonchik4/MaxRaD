@@ -20,7 +20,10 @@ public class MyHeroScript : MonoBehaviour
         {
             transform.position += runningSpeed * transform.forward * Time.deltaTime;
         }
-
+        if (Input.GetKey(KeyCode.S)) // Use 'S' key for backward movement
+        {
+            transform.position -= runningSpeed * transform.forward * Time.deltaTime;
+        }
 
 
         if (Input.GetKey(KeyCode.D))
