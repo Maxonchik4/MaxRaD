@@ -6,6 +6,7 @@ public class MyHeroScript : MonoBehaviour
 {
     float runningSpeed = 3f;
     // Start is called before the first frame update
+    float turnSpeed = 90f;
     void Start()
     {
 
@@ -34,6 +35,11 @@ public class MyHeroScript : MonoBehaviour
         {
             transform.Rotate(Vector3.up, 45 * Time.deltaTime);
 
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime); // Rotate left by negating turnSpeed
         }
 
         if (Input.GetKey(KeyCode.Space))
